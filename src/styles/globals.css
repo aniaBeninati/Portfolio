@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f5f5; /* Colore di sfondo chiaro */
+  --foreground: #333333; /* Colore del testo scuro */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Bodoni', serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.bg-primary {
+  background-color: #4E614E; /* Verde */
+}
+
+.bg-secondary {
+  background-color: #F2B85A; /* Giallo */
+}
+
+.text-primary {
+  color: #4E614E;
+}
+
+.text-secondary {
+  color: #F2B85A;
+}

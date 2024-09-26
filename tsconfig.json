@@ -1,26 +1,33 @@
 {
   "compilerOptions": {
+    "target": "esnext", // Mantieni il target moderno
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "esnext", // Mantieni esnext per Next.js
+    "moduleResolution": "bundler", // Mantieni bundler per il supporto moderno
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./", // Mantieni base URL per risoluzione più chiara
+    "paths": {
+      "@/*": ["./src/*"], // Mantieni il tuo alias semplice
+      "@components/*": ["src/components/*"], // Alias specifici
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@data/*": ["src/data/*"],
+      "@types/*": ["src/types/*"]
+    },
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Mantieni il plugin per Next.js
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next.config.js", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Mantieni le tue inclusioni
+  "exclude": ["node_modules"] // Mantieni l'esclusione
 }
