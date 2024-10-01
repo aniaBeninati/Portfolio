@@ -1,10 +1,12 @@
 # Ania Beninati - Front-End Developer Portfolio
 
+![Cover Image](portfolio.png) 
+
 Welcome to the repository for **Ania Beninati's Front-End Developer Portfolio**! This project showcases my skills, expertise, and passion for UX/UI design and modern web development. Built using cutting-edge technologies, this portfolio is a reflection of my journey as a developer, highlighting projects, skills, and a bit about me.
 
 ## ✨ Live Demo
 
-Check out the live version of my portfolio [here](https://your-portfolio-link.com).
+Check out the live version of my portfolio [here](https://portfolio-stefaniabeninati.vercel.app/).
 
 ## 🛠️ Tech Stack
 
@@ -34,30 +36,24 @@ The project is organized as follows:
 ├── tsconfig.json         # TypeScript configuration
 ├── tailwind.config.js    # Tailwind CSS configuration
 └── package.json          # Project dependencies and scripts
-## 🚀 Features
 
-- **Dynamic animations**: Created with GSAP to bring the content to life.
-- **Responsive design**: Optimized for all devices using Tailwind CSS.
-- **Interactive 3D elements**: Built with Three.js to enhance user experience.
-- **Skills section**: Highlights key technologies and tools I use in my development workflow.
-- **About me section**: Provides a brief background of who I am and my approach to development.
-
-## 🖥️ Setup and Installation
-
+🚀 Features
+Dynamic animations: Created with GSAP to bring the content to life.
+Responsive design: Optimized for all devices using Tailwind CSS.
+Interactive 3D elements: Built with Three.js to enhance user experience.
+Skills section: Highlights key technologies and tools I use in my development workflow.
+About me section: Provides a brief background of who I am and my approach to development.
+🖥️ Setup and Installation
 Follow these steps to run the project locally:
 
-1. Clone the repository:
+Clone the repository:
+git clone https://github.com/aniaBeninati/Portfolio.git
 
-   ```bash
-   git clone https://github.com/aniaBeninati/Portfolio.git
-
-## ⚙️ Configuration
-
+⚙️ Configuration
 To customize the configuration of the project, update the following files:
 
-- **`tailwind.config.js`**: Modify the design tokens such as colors, font sizes, and breakpoints.
-- **`tsconfig.json`**: Adjust TypeScript settings and compiler options as needed.
+tailwind.config.js: Modify the design tokens such as colors, font sizes, and breakpoints.
+tsconfig.json: Adjust TypeScript settings and compiler options as needed.
 
 🌐 Connettiti con Me
-
-https://portfolio-stefaniabeninati.vercel.app/
+Portfolio Live Demo
