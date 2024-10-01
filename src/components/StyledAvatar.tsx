@@ -28,15 +28,18 @@ const StyledAvatar = () => {
         alt="Stefania Beninati"
         width={400}
         height={500}
-        className="profile-image relative z-20 rounded-lg shadow-lg"
+        className="profile-image relative z-20 rounded-lg shadow-lg mx-4 md:mx-0" // Aggiunto margine per mobile
       />
 
       {/* Sovrapposizione di codice */}
       <div className="absolute bottom-10 right-10 text-left text-white z-30 opacity-60">
         <pre>
-          {`const Stefania = () => {
-    console.log('Front-End Developer');
-};`}
+          <span className="block ml-4 md:ml-0">const</span> {/* Aggiunto margine per mobile */}
+          {' Stefania = () => {'}
+          <br />
+          <span className="ml-10">console.log('Front-End Developer');</span>
+          <br />
+          {'};'}
         </pre>
       </div>
     </div>
