@@ -57,3 +57,7 @@ To customize the configuration of the project, update the following files:
 
 - **`tailwind.config.js`**: Modify the design tokens such as colors, font sizes, and breakpoints.
 - **`tsconfig.json`**: Adjust TypeScript settings and compiler options as needed.
+
+🌐 Connettiti con Me
+
+https://portfolio-stefaniabeninati.vercel.app/
