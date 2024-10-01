@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Skills: React.FC = () => {
-  const skills = ['JavaScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'Firebase', 'Figma', 'Postman', 'Git'];
+  const skills = ['JavaScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'Firebase', 'Figma', 'Postman'];
 
   return (
     <section className="skills-section py-10 md:py-20 text-center mx-4 md:mx-0">
