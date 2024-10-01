@@ -1,13 +1,8 @@
-// src/app/layout.tsx
-import '../styles/globals.css';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+"use client";
 
-export const metadata = {
-  title: 'Stefania Beninati - Portfolio',
-  description: 'Il portfolio personale di Stefania Beninati, Front-End Developer.',
-};
-
+import Header from '@/components/Header'; 
+import Footer from '@/components/Footer'; 
+import '@/styles/globals.css'; //
 export default function RootLayout({
   children,
 }: {
@@ -15,9 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
-      <body className="bg-background text-foreground">
+      <body>
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

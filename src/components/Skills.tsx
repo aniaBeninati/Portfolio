@@ -1,19 +1,19 @@
-// src/components/Skills.tsx
-const Skills = () => {
-    const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'GSAP', 'SCSS'];
-  
-    return (
-      <section className="py-8 bg-secondary text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Competenze</h2>
-        <ul className="flex flex-wrap justify-center gap-4">
-          {skills.map(skill => (
-            <li key={skill} className="bg-white text-primary py-2 px-4 rounded-lg shadow-lg">
-  // src/components/Skills.tsx
-          {skill}
-        </li>
-      ))}
-    </ul>
-  </section>
+import React from 'react';
+
+const Skills: React.FC = () => {
+  const skills = ['JavaScript', 'React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'Firebase', 'Figma', 'Postman', 'Git'];
+
+  return (
+    <section className="skills-section py-10 md:py-20 text-center mx-4 md:mx-0">
+      <h2 className="text-4xl font-bold mb-6">Competenze</h2>
+      <div className="flex justify-center flex-wrap gap-4">
+        {skills.map((skill, index) => (
+          <div key={index} className="bg-white text-black font-semibold py-3 px-6 rounded-lg shadow-lg">
+            {skill}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

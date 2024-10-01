@@ -1,39 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #f5f5f5; /* Colore di sfondo chiaro */
-  --foreground: #333333; /* Colore del testo scuro */
+  --background-dark: #141c3a;
+  --foreground-light: #FFFFFF;
+  --primary-accent: #FF8C00;  /* Accento arancione */
+  --secondary-accent: #00BFFF;  /* Blu vivido */
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--foreground-light);
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Libre Bodoni', serif;
+  color: var(--foreground-light);
 }
 
-.container {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #A9A9A9;
 }
 
-.bg-primary {
-  background-color: #4E614E; /* Verde */
+a {
+  color: var(--primary-accent);
+  transition: color 0.3s ease;
 }
 
-.bg-secondary {
-  background-color: #F2B85A; /* Giallo */
+a:hover {
+  color: var(--secondary-accent);
 }
 
-.text-primary {
-  color: #4E614E;
+.dynamic-elements-container {
+  position: absolute;
+  top: 50px;
+  right: 10px;
 }
 
-.text-secondary {
-  color: #F2B85A;
+.dynamic-code-symbol {
+  margin: 0 20px;
 }
+
+.profile-image {
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%); /* Modifica per un ritaglio più dinamico */
+}
+
+.absolute {
+  position: absolute;
+}
+
+
+.logo {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+.floating-icon {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

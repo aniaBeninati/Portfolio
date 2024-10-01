@@ -1,4 +1,3 @@
-// src/utils/gsapAnimations.ts
 import { gsap } from 'gsap';
 
 export const animateHeroText = () => {
